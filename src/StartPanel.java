@@ -248,4 +248,13 @@ public class StartPanel extends JPanel implements ActionListener {
     }
 
   }
+
+  public void resetStart() {
+    celebrityCount = 0;
+    celebrityCountLabel.setText(countLabelText + celebrityCount);
+    startButton.setEnabled(false);
+    answerField.setText("Type celebrity here (Probably Keanu Reeves) (4 letters min)");
+    clueField.setText("Enter celebrity clue here (Maybe about Keanu Reeves) (10 letters min)");
+  }
+
 }
